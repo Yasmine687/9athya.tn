@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9athia.tn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="test.js"></script>
+</head>
+<body>
+<form action="livraison.html"  id="f" name="f"  method="post" onsubmit=" return test_art()">
+<fieldset>
+   <legend> Passer Votre Commande </legend>
+     <div>
+        <select oninput="calcul()" name="chxart" id="chxart" >
+            <option value="" selected>Choisir un article svp</option>
+                <optgroup label="Articles Ménagers"></optgroup>
+                    <option value="280.900">Four électique 40 litres</option>
+                    <option value="370.300">Four électique 70 litres</option>
+                    <option value="750">Four à gaz 70 litres</option>
+                <optgroup label="Articles High tech"></optgroup>
+                    <option value="695.000">Smartphone Samsung A12</option>
+                    <option value="1099.000">Smartphone Redmi 10s</option>
+                    <option value="1649.900">ipad pro 12.9</option>
+                <optgroup label="Beauté"></optgroup>
+                    <option value="12.900">Crème miracle pour les mains</option>
+                    <option value="29.800"> Crème Nourrissante Pieds</option>
+                <optgroup label="Bricolage"></optgroup>
+                    <option value="60.000">Tuyau d'arrosage 50 Mètres</option>
+                    <option value="45.000">Tuyau d'arrosage 30 Mètres</option>
+        </select>
+    </div>
+    <div id="d1">
+           <label for="qte">Choisir la Quantité:</label>
+            <input type="range" name="qte" id="qte" min="1" max="10" value="1"  oninput="calcul()">
+           <div id="q">1</div>
+    </div>
+    <div id="d2">
+
+        <input list="liv" id="lv" name="lv" oninput="calcul()">
+        <datalist id="liv">
+            <option value="Boutique"></option>
+            <option value="Livreur"></option>
+            <option value="Rapide poste"></option>
+        </datalist>
+        <!------------datalist c'est un champ de list -------------->
+    </div>
+ <div>
+        <label for="qt">Prix à payer</label>
+        <input type="text" name="qt" id="qt" value="0" readonly>
+        <label>Dinars </label>
+    </div>
+    <div id="d3">
+        <label for="">Date Livraison: </label>
+        <input type="date" name="dt" id="dt"><br>
+        <label for="">Heure Livraison:</label>
+
+       <input type="time" name="tm" id="tm" min="09:00" max="18:00">
+    </div>
+
+    <div>
+        <input type="submit" name="b1" id="b1" value="Confirmer">
+        <input type="reset" name="b2" id="b2" value="Annuler">
+    </div>
+</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="test.js"></script>
+    <link rel="shortcut icon" href="goffa.jpg" type="image/x-icon">
+    <title>9adhia.tn</title>
+</head>
+<body>
+    <form onsubmit="return test_Ins()" action="inscription.php" method="post" id="f" name="f">
+        <table>
+            <tr>
+                <td colspan="2" id="cl1"> inscription</td>
+            </tr>
+            <tr>
+                <td class="col">Nom et prenom</td>
+                <td>
+                    <input type="text" id="np" name="np" maxlength="50" placeholder="saisir votre nom et prenom">
+                </td>
+            </tr>
+            <tr>
+                <td class="col">N°Telephone</td>
+                <td>
+                    <input type="text" id="tl" name="tl" maxlength="10" placeholder="xx xxx xxx">
+                </td>
+            </tr>
+            <tr>
+                <td class="col">Adresse</td>
+                <td>
+                    <textarea name="ad" id="ad" cols="20" rows="3" placeholder="Saisir votre adresse"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="col">Mode paiement</td>
+                <td>
+                    <div>
+                        <input type="radio" name="mod" id="mod1" value="ESP"><label for="mod1">Espeses</label><br>
+                        <input type="radio" name="mod" id="mod2" value="CAB"><label for="mod2">Carte bancaire</label><br>
+                        <input type="radio" name="mod" id="mod3" value="ELC"><label for="mod3">Electronique</label><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col">mode de passe</td>
+                <td>
+                    <input type="password" id="pd" name="pd" maxlength="8" placeholder="saisir votre mot de passe">
+                </td>
+            </tr>
+            <tr>
+                <td class="col">Confirmer mot de passe </td>
+                <td>
+                    <input type="password" id="cpd" name="cpd" maxlength="8" placeholder="confirmer votre mot de passe">         
+                </td>
+            </tr>
+            <tr>
+                <td class="col">preference</td>
+                <td>
+                    <div>
+                        <input type="checkbox" name="pr1" id="pr1" value="MEN"><label for="pr1">Articles Ménagers</label><br>
+                        <input type="checkbox" name="pr2" id="pr2" value="HTC"><label for="pr2">Articles High tech</label><br>
+                        <input type="checkbox" name="pr3" id="pr3" value="BEA"><label for="pr3">Articles Beauté</label><br>
+                        <input type="checkbox" name="pr4" id="pr4" value="BRC"><label for="pr4">Articles Bricolage</label><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Generer Login</label>
+                    <input type="text" id="lg" name="lg" maxlength="10" readonly>
+                    <input type="button" onclick="return gen_log()" value="Cliquer ici" id="b1" name="b1">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" id="b1" name="b1" value="valider">
+                    <input type="reset" id="b2" name="b2" value="annler">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+    
